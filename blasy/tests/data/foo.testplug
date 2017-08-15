@@ -1,0 +1,8 @@
+[Core]
+Name = Basic plugin
+Module = foo
+
+[Documentation]
+Author = Brian Stidsen
+Version = 0.1
+Description = Basic plugin with no init method.
