@@ -9,3 +9,5 @@ In any case this is a quick and very basic implementation of a plugin framework.
 Since I already had the logic in place for the existing Yapsy methods I have used identical names, including their intended functionality. This is done even if unnecessary or overkill in this basic package. Thus it should be easy to go back to Yapsy if that makes sense at a later point.
 
 Note: Alpha for now - YMMV.
+
+To install: ``pip install blasy``
