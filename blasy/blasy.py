@@ -107,7 +107,7 @@ class PluginManager:
                     imported_module = importlib.import_module(
                         plug_info['module']
                     )
-                except ModuleNotFoundError as e:
+                except ImportError as e:
                     # We don't really care about modules that are not able
                     # to be imported for whatever reason
                     sys.path.pop(0)
