@@ -108,10 +108,13 @@ class PluginManager:
                         plug_info['module']
                     )
                 except ImportError as e:
-                    # We don't really care about modules that are not able
-                    # to be imported for whatever reason
-                    sys.path.pop(0)
-                    continue
+                    raise BlasyError((
+                        "Could not import module from plugin '{0}'!\n"
+                        "  Error: {1}"
+                    ).format(
+                        plug_info['module'],
+                        e
+                    ))
                 sys.path.pop(0)
 
                 # Get classes in module
